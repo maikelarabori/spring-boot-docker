@@ -45,7 +45,7 @@ $ sh run-tests-check.sh
 > The build will fail if some test fails, or you have some code styling issue or possible bugs are found.
 > Once this command runs successfully, the REST API documentation will be generated at *spring-boot-docker/target/generated-docs/index.html*.
 ## Example of implemented requests
-*__You need to have cURL installed__*.
+*__To use the commands below you need to have cURL installed__*.
 
 > Registers a new user
 ```code
