@@ -6,6 +6,14 @@ This is a simple project using a few Spring modules and Docker Compose to run th
 It will also demonstrates the usage of Spring Doc and the integration with PostgreSQL through Spring JPA.
 In addition, a few useful plugins to ensure the code quality are added to the project: Checkstyle, SpotBugs and FindBugsSec.
 
+## Prerequisites
+In order to run and compile the project correctly you will need:
+
+1. OpenJDK 13+
+2. Maven 3.5+
+3. Docker Desktop + Docker Compose
+4. Linux or MacOS
+
 ## Getting started
 
 The project brings three files that are executable in Linux or Mac systems.
@@ -60,5 +68,5 @@ curl -X GET \
   -H 'Content-Type: application/json' \
   -H 'cache-control: no-cache'
 ```
-
-## Continue... <TODO>
+## Contribution
+Feel free to make suggestions for fixes, improvements or contributing through pull requests.
