@@ -1,0 +1,38 @@
+= *REST API*
+
+{empty} +
+
+== # REST Endpoints
+
+{empty} +
+
+=== *GET api/users*
+
+{empty} +
+
+.Request
+include::{snippets}/get-all-users/http-request.adoc[]
+
+.Response
+include::{snippets}/get-all-users/http-response.adoc[]
+
+{empty} +
+
+==== Sample response Headers
+
+include::{snippets}/get-all-users/response-headers.adoc[]
+
+{empty} +
+
+==== Sample response Fields
+
+include::{snippets}/get-all-users/response-fields.adoc[]
+
+{empty} +
+
+.CURL request
+
+include::{snippets}/get-all-users/curl-request.adoc[]
+
+{empty} +
+{empty} +

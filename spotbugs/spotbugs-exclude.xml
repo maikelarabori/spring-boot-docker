@@ -1,0 +1,29 @@
+<FindBugsFilter>
+    <Match>
+        <Bug pattern="CRLF_INJECTION_LOGS"/>
+    </Match>
+    <Match>
+        <Bug pattern="SPRING_ENDPOINT"/>
+    </Match>
+
+    <!-- Method with a false positive for predictable random. -->
+    <Match>
+        <Class name="org.example.util.Utilities" />
+        <Method name="randomLong" />
+        <Bug pattern="PREDICTABLE_RANDOM" />
+    </Match>
+
+    <!-- Ignore the PERMISSIVE_CORS checking in this method. -->
+    <Match>
+        <Class name="org.example.WebContentConfiguration" />
+        <Method name="addCorsMappings" />
+        <Bug pattern="PERMISSIVE_CORS" />
+    </Match>
+
+    <!-- Ignore the SPRING_CSRF_PROTECTION_DISABLED checking in this method. -->
+    <Match>
+        <Class name="org.example.WebSecurityConfiguration" />
+        <Method name="configure" />
+        <Bug pattern="SPRING_CSRF_PROTECTION_DISABLED" />
+    </Match>
+</FindBugsFilter>
