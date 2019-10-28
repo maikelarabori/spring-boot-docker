@@ -12,13 +12,17 @@ In order to run and compile the project correctly you will need:
 1. OpenJDK 13+
 2. Maven 3.5+
 3. Docker Desktop + Docker Compose
-4. Linux or MacOS
+4. Git
+5. Linux or MacOS
 
 ## Getting started
 
 The project brings three files that are executable in Linux or Mac systems.
 They will help you to get started, debug and test your code. The following commands
-must be run in the root project directory.
+must be run in the root project directory. Before running the commands, you have to clone the project:
+```code
+$ git clone https://github.com/maikelarabori/spring-boot-docker.git
+```
 
 ### Running the project in development mode
 ```code
@@ -36,10 +40,10 @@ $ sh run-debug.sh
 
 ### Test, validate your code and prevent bugs
 ```code
-$ sh run-debug.sh
+$ sh run-tests-check.sh
 ```
 > The build will fail if some test fails, or you have some code styling issue or possible bugs are found.
-
+> Once this command runs successfully, the REST API documentation will be generated at *spring-boot-docker/target/generated-docs/index.html*.
 ## Example of implemented requests
 *__You need to have cURL installed__*.
 
